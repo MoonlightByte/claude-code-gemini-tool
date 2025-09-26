@@ -45,7 +45,20 @@ pip install google-generativeai
 
 ### 4. Configure Claude Code
 
-Add this directory to your Claude Code workspace so Claude can access the tool.
+1. Add this directory to your Claude Code workspace so Claude can access the tool.
+
+2. Add the following to your project's CLAUDE.md file (create one if it doesn't exist):
+
+```markdown
+## Gemini Integration
+
+For large-context analysis (files >2000 lines):
+```python
+from gemini_tool import query_gemini, plan_feature
+result = query_gemini("Analyze this", files=["large_file.html"])
+```
+
+This tells Claude Code that the Gemini tool is available for analyzing large files that exceed Claude's context window.
 
 ## Usage in Claude Code
 
