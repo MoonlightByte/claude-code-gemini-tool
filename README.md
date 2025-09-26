@@ -157,7 +157,7 @@ Feel free to submit issues and enhancement requests!
 
 ## License
 
-MIT License - feel free to use in your own projects
+MIT License - 100% open source, free to use, modify, and distribute in your own projects
 
 ## Acknowledgments
 
