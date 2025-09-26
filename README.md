@@ -2,6 +2,16 @@
 
 A powerful integration tool that enables Claude Code to analyze large files and codebases using Google's Gemini AI model. Perfect for when you need to analyze files larger than Claude's context window or get a second perspective on complex code.
 
+## Quick Start for Claude Code Users
+
+1. Clone this repo in your project directory
+2. Run `pip install google-generativeai`  
+3. Get a free API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+4. Create `google_api.pi` with: `api_key=YOUR-KEY-HERE`
+5. Ask Claude: "Use gemini to analyze my large file"
+
+That's it! Claude will handle the rest.
+
 ## Features
 
 - 📁 Analyze files of any size (even 10,000+ line files)
@@ -53,7 +63,9 @@ pip install google-generativeai
 
 ## Usage in Claude Code
 
-Once set up, you can ask Claude to use the Gemini tool for various tasks:
+Once set up, simply ask Claude naturally and the tool will be used automatically:
+
+**You don't need to write any code!** Just ask Claude things like:
 
 ### Analyzing Large Files
 
@@ -124,7 +136,7 @@ plan = plan_feature(
 
 ## Security Notes
 
-- ⚠️ **Never commit your API key** - always use config.py (it's gitignored)
+- ⚠️ **Never commit your API key** - always use google_api.pi (it's gitignored)
 - The tool only reads files you explicitly specify
 - No data is stored - all analysis is done in real-time
 
@@ -134,7 +146,7 @@ plan = plan_feature(
 Run: `pip install google-generativeai`
 
 ### "Invalid API key"
-Check that your API key in `config.py` is correct
+Check that your API key in `google_api.pi` is correct
 
 ### "File not found"
 Ensure you're providing correct relative paths from your working directory
